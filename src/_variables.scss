@@ -1,0 +1,18 @@
+$red: hsl(0, 95%, 55%);
+$orange: hsl(36, 100%, 50%);
+$pink: hsl(321, 100%, 51%);
+$purple: hsl(303, 69%, 36%);
+$blue: hsl(193, 100%, 56%);
+$green: hsl(142, 100%, 35%);
+$yellow: hsl(54, 98%, 55%);
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@mixin flex-sb {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

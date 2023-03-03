@@ -1,9 +1,10 @@
 import React from "react";
+import Home from "./screens/Home";
 
 const App = () => {
   return (
     <div>
-      <h1 className="logo">dodo</h1>
+      <Home />
     </div>
   );
 };
