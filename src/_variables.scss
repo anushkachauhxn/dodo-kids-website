@@ -16,3 +16,7 @@ $yellow: hsl(54, 98%, 55%);
   justify-content: space-between;
   align-items: center;
 }
+@mixin flex-col {
+  display: flex;
+  flex-direction: column;
+}

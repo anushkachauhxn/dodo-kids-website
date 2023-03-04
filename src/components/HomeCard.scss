@@ -1,0 +1,32 @@
+@import "../variables";
+
+.rect-card {
+  @include flex-col();
+  justify-content: stretch;
+  border: 5px solid white;
+  border-radius: 4px;
+  .image {
+    flex: 1;
+    overflow: hidden;
+  }
+  .text {
+    padding: 10px 12px 5px;
+    font-size: 14px;
+    background-color: white;
+  }
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.round-card {
+  @include flex-center();
+  .image {
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+  overflow: hidden;
+  cursor: pointer;
+}
