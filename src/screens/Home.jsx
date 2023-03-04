@@ -1,11 +1,19 @@
 import React from "react";
 import Navbar from "../components/Navbar";
+import HomeCard from "../components/HomeCard";
+import "./Home.scss";
 
 const Home = () => {
   return (
-    <div>
+    <div className="home">
       <Navbar />
-      Home
+      <section className="main">
+        <HomeCard />
+        <HomeCard />
+        <HomeCard />
+        <HomeCard />
+        <HomeCard />
+      </section>
     </div>
   );
 };
