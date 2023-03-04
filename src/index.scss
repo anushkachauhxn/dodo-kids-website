@@ -27,3 +27,10 @@ img {
   width: 100%;
   object-fit: contain;
 }
+button {
+  font-size: inherit;
+  background: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}

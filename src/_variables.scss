@@ -14,7 +14,6 @@ $yellow: hsl(54, 98%, 55%);
 @mixin flex-sb {
   display: flex;
   justify-content: space-between;
-  align-items: center;
 }
 @mixin flex-col {
   display: flex;
