@@ -1,32 +1,44 @@
 @import "../variables";
 
-.rect-card {
-  @include flex-col();
-  justify-content: stretch;
-  border: 5px solid white;
-  border-radius: 4px;
-  .image {
-    flex: 1;
-    overflow: hidden;
-  }
-  .text {
-    padding: 10px 12px 5px;
-    font-size: 14px;
-    background-color: white;
-  }
-  overflow: hidden;
-  cursor: pointer;
-}
-
-.round-card {
-  @include flex-center();
-  .image {
-    img {
-      height: 100%;
-      width: 100%;
-      object-fit: cover;
+.card {
+  &.rect-card {
+    @include flex-col();
+    justify-content: stretch;
+    border: 5px solid white;
+    border-radius: 4px 4px 8px 8px;
+    box-shadow: rgb(0 0 0 / 10%) 0px 3px 6px;
+    .image {
+      flex: 1;
+      overflow: hidden;
+    }
+    .text {
+      padding: 10px 12px 5px;
+      font-size: 14px;
+      background-color: white;
     }
   }
+
+  &.round-card {
+    @include flex-center();
+  }
+
   overflow: hidden;
   cursor: pointer;
+
+  &:hover {
+    transform-origin: 50% 50%;
+    animation: swinging 0.75s ease-in-out 0s infinite normal none;
+  }
+}
+
+@keyframes swinging {
+  0% {
+    transform: rotate(-1deg);
+  }
+  50% {
+    transform: rotate(1deg);
+  }
+  100% {
+    transform: rotate(-1deg);
+  }
 }
