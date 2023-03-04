@@ -1,5 +1,10 @@
 import React from "react";
 import "./Navbar.scss";
+import AboutIcon from "../assets/about.png";
+import ResearchIcon from "../assets/research.png";
+import GameIcon from "../assets/game.png";
+import VideoIcon from "../assets/video.png";
+import RocketIcon from "../assets/rocket.png";
 
 const Navbar = () => {
   return (
@@ -10,41 +15,21 @@ const Navbar = () => {
         </a>
         <ul className="links">
           <li>
-            <img
-              src="https://cdn-icons-png.flaticon.com/512/4202/4202843.png"
-              alt=""
-            />
-            About
+            <img src={AboutIcon} alt="" /> About
           </li>
           <li>
-            <img
-              src="https://cdn-icons-png.flaticon.com/512/1930/1930256.png"
-              alt=""
-            />
-            Research
+            <img src={ResearchIcon} alt="" /> Research
           </li>
           <li>
-            <img
-              src="https://cdn-icons-png.flaticon.com/512/9267/9267883.png"
-              alt=""
-            />{" "}
-            Games
+            <img src={GameIcon} alt="" /> Games
           </li>
           <li>
-            <img
-              src="https://cdn-icons-png.flaticon.com/512/3074/3074767.png"
-              alt=""
-            />
-            Videos
+            <img src={VideoIcon} alt="" /> Videos
           </li>
         </ul>
       </div>
       <div className="get-started">
-        <img
-          src="https://cdn-icons-png.flaticon.com/512/407/407016.png"
-          alt=""
-        />
-        GET STARTED
+        <img src={RocketIcon} alt="" /> GET STARTED
       </div>
     </div>
   );
